@@ -34,6 +34,10 @@ class ProfileViewController: UIViewController {
         setupDelegates()
         self.navigationItem.title = "Perfil"
     }
+    
+    override func viewDidLayoutSubviews() {
+        print(customView.tableView.contentSize.height)
+    }
 
     override func viewDidAppear(_ animated: Bool) {
         /*

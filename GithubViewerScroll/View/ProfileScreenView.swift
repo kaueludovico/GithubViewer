@@ -48,7 +48,7 @@ class ProfileScreenView: BaseView {
     // Container 2 - Web View
     lazy var subView2: UIView = {
         let view = UIView()
-        view.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        view.heightAnchor.constraint(equalToConstant: 230).isActive = true
         view.backgroundColor = .white
         return view
     }()
@@ -82,7 +82,8 @@ class ProfileScreenView: BaseView {
     lazy var dataView: WKWebView = {
         let view = WKWebView()
 //        view.load(URLRequest(url: URL(string: "https://github-readme-stats.vercel.app/api/top-langs/?username=kaueludovico&layout=compact&langs_count=7&theme=dracula")!))
-        view.pageZoom = 2.9
+        view.pageZoom = 3.28
+        view.isUserInteractionEnabled = false
         return view
     }()
     

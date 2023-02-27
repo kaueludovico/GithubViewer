@@ -163,7 +163,7 @@ class ProfileTest1: BaseView {
     // ScrollView
     lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
-        scrollView.backgroundColor = .red
+        scrollView.backgroundColor = .white
         return scrollView
     }()
     
